@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(to right, rgb(216, 245, 255), rgb(253, 210, 217));
+    overflow-x: hidden;
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700; 
+}
+
+.card-img {
+    border-radius: 80%;
+}
+
+#cart-badge {
+    font-size: 0.8rem;
+}
+
+.modal-header {
+    background-color: #ff00d9;
+    color: white;
+}
+
+.modal-footer {
+    justify-content: space-between;
+}
+
+.text-center {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.fancy-button {
+    background-color: #ffcad4 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 25px !important;
+    padding: 10px 20px !important;
+    font-family: 'Jua', sans-serif !important;
+    font-size: 1rem !important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+}
+
+
+.fancy-button:hover {
+    background-color: #ffa6c9; 
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); 
+}
+
+.fancy-button:active {
+    background-color: #ff8aa5; 
+    transform: translateY(0); 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1)
+}
+

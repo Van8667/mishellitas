@@ -1,0 +1,36 @@
+body {
+    font-family: 'Jua', sans-serif;
+    background: linear-gradient(to right, rgb(216, 245, 255), rgb(253, 210, 217));
+    overflow-x: hidden;
+    
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700; /* Cambia el color al pasar el ratón */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(205, 92, 184);
+}
+
+#cart-items .list-group-item {
+    font-size: 1.2rem;
+}
+
+#total-amount {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#clear-cart {
+    display: inline-block;
+    margin: 0 auto;
+}
+

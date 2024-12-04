@@ -1,0 +1,93 @@
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Jua', sans-serif;
+    
+        background-image: url('fondo.png'); 
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed; 
+    
+    
+}
+
+h2 {
+    font-family: "Akaya Telivigala", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+      
+
+.container {
+    width: 80%;
+    max-width: 250px;
+    background: linear-gradient(to right, rgb(216, 245, 255), rgb(253, 210, 217));
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(191, 185, 245);
+    border-radius: 5px;
+}
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: pink;
+    border: none;
+    color: rgb(145, 7, 143);
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: purple;
+    color: white
+}
+.hidden {
+    display: none;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.navbar-brand .brand-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* Tamaño del texto de la marca */
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.645);
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem; /* Letras grandes en los enlaces */
+    text-transform: uppercase; /* Todas las letras en mayúsculas */
+    color: rgba(255, 255, 255, 0.586);
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700;     
+}
+
+
+#register-form {
+    width: 50%;
+    display: inline-block;
+    margin: 0 auto;
+}

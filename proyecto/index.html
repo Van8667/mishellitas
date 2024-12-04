@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Jua&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <style>
+      
+        .navbar-brand, .nav-link {
+            font-size: 1.25rem; 
+            font-weight: bold;  
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navbar-brand img {
+            height: 40px;
+            width: auto;
+        }
+        .form-control {
+            max-width: 300px;
+        }
+        .cart-icon {
+            position: relative;
+            font-size: 1.5rem;
+            color: white;
+        }
+        .cart-badge {
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            background-color: red;
+            color: white;
+            font-size: 0.8rem;
+            padding: 2px 5px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: purple;">
+    <div class="container-fluid">
+        
+        <a class="navbar-brand" href="#">
+            <img src="LOGO.webp" alt="Logo">
+            Huellitas
+        </a>
+
+      
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Conectate c:
+                    </a>
+                    <ul class="dropdown-menu">
+    
+                        <li><a class="dropdown-item" href="sesion.html">Inicia sesion</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                
+                    </ul>
+                </li>
+      
+
+            
+            <form class="d-flex me-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+
+          
+            <a href="carrito.html" class="btn btn-outline-light position-relative d-flex align-items-center">
+              <i class="bi bi-cart"></i>
+              <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+              <span class="ms-2">Carrito</span>
+          </a>
+          
+        </div>
+    </div>
+</nav>
+
+    
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+    <div class="container-fluid">
+        <h1 class="display-1">  </h1>
+        <div class="row justify-content-center" ;>
+          <div
+            id="carouselExampleIndicators""
+            class="carousel slide col-8 mb-4 mt-4"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="img-fluid rounded"
+                  src="IMG1.png"
+                  
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="img-fluid rounded"
+                  src="IMG2.png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="img-fluid rounded"
+                  src="IMG3.png"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <section id="pat">
+        <img
+        src="huella.png"
+        width="350"
+        /> 
+      </section>
+      
+      <section id="pat2">
+        <img
+        src="huella.png"
+        width="350"
+        /> 
+      </section>
+      
+      <section id="nov">
+        <div style="color: darkblue; " >
+          <h1> Novedades Animalisticas</h1>
+        </div>
+      </section>
+
+      <section id="nov1">
+        <div>
+            <img 
+                id="clickable-image"
+                src="delfin.jpg"
+                style="width:600px;"
+            />
+        </div>
+        <p id="hidden-text" style="display: none; text-align: center; margin-top: 10px;">
+          Los delfines se llaman entre sí usando silbidos únicos. Estos silbidos actúan como nombres personales y son reconocidos por otros miembros del grupo.        </p>
+    </section>
+
+
+    <section id="nov2">
+      <div>
+          <img 
+              id="clickable-image2"
+              src="abeja.jpg"
+              style="width:600px;"
+          />
+      </div>
+      <p id="hidden-text2" style="display: none; text-align: center; margin-top: 10px;">
+        Las abejas pueden calcular el tiempo de forma precisa, incluso cuando están encerradas en un lugar sin luz. Esto les ayuda a saber cuándo las flores estarán abiertas para recolectar néctar.
+      </p>
+      </section>
+
+      <h2 id = "C"> Conoce nuestros productos</h2>
+
+      <div class="productos-container">
+        <a href="productos.html" class="producto">
+          <img src="comida1.jpg" alt="Producto 1">
+          <h5 class="card-title">Hill's science diet adult Original</h5>
+          <p class="card-text">$1,840.00</p>
+        </a>
+        <a href="productos.html" class="producto">
+          <img src="corral.jpg" alt="Producto 2">
+          <h5 class="card-title">You and me Corral de juegos</h5>
+          <p class="card-text">$1,265.00</p>
+        </a>
+        <a href="productos.html" class="producto">
+          <img src="cunipic.jpg" alt="Producto 3">
+          <h5 class="card-title">Cunipic Alpha pro</h5>
+          <p class="card-text">$183.75</p>
+        </a>
+      </div>
+      
+      <footer class="text-center py-4" style="background-color: purple; color: white;">
+        <p>© 2024 Huellitas. Todos los derechos reservados.</p>
+    </footer>
+      
+
+    
+   
+</body>
+</html>
